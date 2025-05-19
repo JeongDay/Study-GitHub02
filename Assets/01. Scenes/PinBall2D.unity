@@ -146,14 +146,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114634348}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.773, y: -3.3944995, z: -0.068821914}
-  m_LocalScale: {x: 0.25000006, y: 1.3000003, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.81915206, w: 0.57357645}
+  m_LocalPosition: {x: 0.671, y: -3.432, z: -0.068821914}
+  m_LocalScale: {x: 0.25000006, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 922546108}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 110}
 --- !u!50 &114634350
 Rigidbody2D:
   serializedVersion: 5
@@ -197,7 +197,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.773, y: -3.3944995}
+  m_ConnectedAnchor: {x: 0.671, y: -3.432}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -205,8 +205,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 270
-    m_UpperAngle: 340
+    m_LowerAngle: 0
+    m_UpperAngle: 90
 --- !u!60 &114634352
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -266,7 +266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 233552461}
-  - component: {fileID: 233552460}
+  - component: {fileID: 233552462}
   m_Layer: 0
   m_Name: Pinball Manager
   m_TagString: Untagged
@@ -274,30 +274,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &233552460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233552459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d72ed4412dd744efbb18f68bda4768b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftFlipper:
-    rb: {fileID: 1240867944}
-    hinge: {fileID: 1240867945}
-    motorSpeed: -1000
-    motorReturnSpeed: 500
-    maxTorque: 10000
-  rightFlipper:
-    rb: {fileID: 114634350}
-    hinge: {fileID: 114634351}
-    motorSpeed: 0
-    motorReturnSpeed: 0
-    maxTorque: 0
 --- !u!4 &233552461
 Transform:
   m_ObjectHideFlags: 0
@@ -313,6 +289,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &233552462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233552459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9219f5dacd41493fb999a911ea023f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftStickRb: {fileID: 1240867944}
+  rightStickRb: {fileID: 114634350}
 --- !u!1 &398864524
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,8 +858,8 @@ Transform:
   m_GameObject: {fileID: 1240867942}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.8191521, w: 0.57357645}
-  m_LocalPosition: {x: -1.2939748, y: -3.3944995, z: -0.068821914}
-  m_LocalScale: {x: 0.25000006, y: 1.3000003, z: 1}
+  m_LocalPosition: {x: -1.171, y: -3.439, z: -0.068821914}
+  m_LocalScale: {x: 0.25000006, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2043077182}
@@ -918,7 +908,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -1.2939748, y: -3.3944995}
+  m_ConnectedAnchor: {x: -1.171, y: -3.439}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
